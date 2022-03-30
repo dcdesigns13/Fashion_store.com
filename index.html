@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<title>Home</title>
+
+<!--Bootstrap css-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!--Font-awesome css-->
+<!--<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+<!--Custome css-->
+<!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">-->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--Theme Color CSS-->
+<script>
+if (window.location.search.indexOf('?color=red') === 0){
+	
+    document.write('<link rel="stylesheet" href="css/style_red.css" />');
+	
+}else if (window.location.search.indexOf('?color=black') === 0) {
+	 
+	document.write('<link rel="stylesheet" href="css/style_black.css" />');
+	
+}else if (window.location.search.indexOf('?color=purple') === 0) { 
+	document.write('<link rel="stylesheet" href="css/style_purple.css" />');
+	
+}else if (window.location.search.indexOf('?color=gold') === 0){  
+	document.write('<link rel="stylesheet" href="css/style_gold.css" />');
+	
+}else if (window.location.search.indexOf('?color=gold') === 0)  {
+	document.write('<link rel="stylesheet" href="css/style_gold.css" />');
+}else{
+	
+	document.write('<link rel="stylesheet" href="css/style.css" />');	
+		
+}
+	
+	
+	
+</script>
+<!--<link class="color-scheme-color" rel="stylesheet" type="text/css" href="css/style.css">-->
+<!--    <link class="color-scheme-color" type="text/css" rel="stylesheet" media="all" href="css/theme/color-01.css">-->
+
+<!--<link class="color-scheme-color" rel="stylesheet" type="text/css" href="css/style_black.css">-->
+<!--<link class="color-scheme-color" rel="stylesheet" type="text/css" href="css/style_red.css">-->
+<!--<link class="color-scheme-color" rel="stylesheet" type="text/css" href="css/style_purple.css">-->
+<!--<link class="color-scheme-color" rel="stylesheet" type="text/css" href="css/style_gold.css">-->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/3dmenu.css">
+</head>
+
+<body class="set3d">
+
+<!-- Header -->
+<div id="menu" class="showmenu">
+  <ul class="cat_menu">
+    <li><a href="#">Category 1 <i class="fas fa-chevron-right ml-auto"></i></a></li>
+    <li><a href="#">Category 2<i class="fas fa-chevron-right"></i></a></li>
+    <li class="hassubs"> <a href="#">Category 3<i class="fas fa-chevron-right"></i></a>
+      <ul class="hidden-xs menu-width">
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+        </div>
+      </ul>
+      <!--mobile view-->
+      <ul class="visible-xs">
+        <li class="hassubs"> <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+          <ul>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+      <!--End mobile view--> 
+    </li>
+    <li><a href="#">Category 4<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 5<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 6<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 7<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 8<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 9<i class="fas fa-chevron-right"></i></a></li>
+  </ul>
+  <div id="trigger"></div>
+</div>
+<div id="content">
+  <header class="header"> 
+    
+    <!-- Top Bar -->
+    
+    <div class="top_bar">
+      <div class="container">
+        <div class="row">
+          <div class="row"> <a href="#" class="social_media"><i class="fab fa-facebook-f"></i></a> <a href="#" class="social_media"><i class="fab fa-twitter"></i></a> <a href="#" class="social_media">Call : +91 01234 56789</a>
+            <div class="top_bar_menu">
+              <ul class="standard_dropdown top_bar_dropdown">
+                <li class="display_inline"> <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                  </ul>
+                </li>
+                <li class="display_inline"> <a href="#">$ USD<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">EUR Euro</a></li>
+                    <li><a href="#">GBP British Pound</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Header Main -->
+    
+    <div class="header_main">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- Logo -->
+          <div class="col-md-3 col-sm-4">
+            <div class="logo_container">
+              <div class="logo hidden-xs"><a href="index.html"><img src="images/Logo.png" /></a></div>
+              <div class="logo visible-xs">
+                <center>
+                  <a href="index.html"><img src="images/Logo.png" /></a>
+                </center>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist for tablet view-->
+          <div class="col-sm-8 hidden-xs visible-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="#" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="#">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="#">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="#"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="#"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Search -->
+          <div class="col-md-6 col-sm-12">
+            <div class="header_search">
+              <div class="header_search_content">
+                <div class="header_search_form_container">
+                  <form action="#" class="header_search_form clearfix">
+                    <input type="search" class="header_search_input form-control" placeholder="Search for products...">
+                    <div class="custom_dropdown hidden-xs">
+                      <select class="categories_option">
+                        <option>Select Category</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                        <option>Category 3</option>
+                        <option>Category 4</option>
+                        <option>Category 5</option>
+                        <option>Category 6</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/icons/search.png" alt=""></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wishlist -->
+          <div class="col-md-3 col-sm-8 hidden-xs hidden-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="/Fashion_store/cart.html" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/cart.html">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="/Fashion_store/checkout.html">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="/Fashion_store/login.html"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/register.html"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    
+    <nav class="navbar navbar-default mrg15">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <div class="cat_menu_container showmenu">
+            <div class="cat_menu_title">
+              <div class="cat_menu_text hidden-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Browse Categories</div>
+              <div class="cat_menu_text visible-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Categories</div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav standard_dropdown main_nav_dropdown margin-left30">
+            <li class="hassubs"> <a href="#">HOME<i class="fas fa-chevron-down"></i></a>
+               <ul>
+                 <li><a href="index.html">Home<i class="fas fa-chevron-down"></i></a></li>
+                 <li><a href="index-2.html">Home2<i class="fas fa-chevron-down"></i></a></li>
+               </ul>
+             </li>
+            <!--<li><a href="index.html">HOME<i class="fas fa-chevron-down"></i></a></li>-->
+            <li><a href="/Fashion_store/about.html">ABOUT<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">SHOP<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="/Fashion_store/productlist.html">Shop Sidebar Left<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist-right.html">Shop Sidebar Right<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li><a href="/Fashion_store/blog.html">BLOG<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">CLOTHING<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li class="hassubs"> <a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                  </ul>
+                </li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+             <li><a href="/Fashion_store/contact.html">CONTACT<i class="fas fa-chevron-down"></i></a></li>
+            <!--<li><a href="#">FAQ<i class="fas fa-chevron-down"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!--End Header-->
+  
+  <div class="container margin-top aniview" data-av-animation="slideInRight">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active"> <img src="images/banner1.jpg" class="width100">
+          <div class="carousel-caption">
+            <h3 class="hidden-xs"><b>- ALL NEW -</b></h3>
+            <h1 class="hidden-xs"><b>Summer  Collections</b></h1>
+            <p class="visible-xs"><b>- ALL NEW -</b></p>
+            <h4 class="visible-xs font23"><b>Summer  Collections</b></h4>
+            <a href="#" class="btn btn-black hvr-shutter-out-horizontal">Shop Now <i class="fa fa-arrow-right"></i></a> </div>
+        </div>
+        <div class="item"> <img src="images/banner2.jpg" class="width100">
+          <div class="carousel-caption">
+            <h3 class="hidden-xs"><b>- ALL NEW -</b></h3>
+            <h1 class="hidden-xs"><b>Summer  Collections</b></h1>
+            <p class="visible-xs"><b>- ALL NEW -</b></p>
+            <h4 class="visible-xs font23"><b>Summer  Collections</b></h4>
+            <a href="#" class="btn btn-black hvr-shutter-out-horizontal">Shop Now <i class="fa fa-arrow-right"></i></a> </div>
+        </div>
+        <div class="item"> <img src="images/banner3.jpg" class="width100">
+          <div class="carousel-caption">
+            <h3 class="hidden-xs"><b>- ALL NEW -</b></h3>
+            <h1 class="hidden-xs"><b>Summer  Collections</b></h1>
+            <p class="visible-xs"><b>- ALL NEW -</b></p>
+            <h4 class="visible-xs font23"><b>Summer  Collections</b></h4>
+            <a href="/Fashion_store/productlist.html" class="btn btn-black hvr-shutter-out-horizontal">Shop Now <i class="fa fa-arrow-right"></i></a> </div>
+        </div>
+      </div>
+      
+      <!-- Left and right controls --> 
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a> </div>
+  </div>
+  
+  <!--Featured categories-->
+  <div class="container margin-top aniview" data-av-animation="slideInLeft">
+    <div class="col-md-12 col-sm-12 pad0">
+      <h4 class="upper_caption">stay classic</h4>
+      <h1 class="lower_caption">featured categories</h1>
+      <br />
+      <div class="col-md-6 visible-xs padding0 ">
+        <div class="block_img_hover"> <img class="img-responsive block_img_small" src="images/banner/block - 1.jpg" />
+          <div class="overlay_block">
+            <div class="block_text_small">
+              <p class="block_tag">fashion</p>
+              <h4 class="block_header"><b>New arrivals</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 hidden-xs padding-left0">
+        <div class="block_img_hover"> <img class="img-responsive block_img" src="images/banner/block - 1.jpg"/>
+          <div class="overlay_block">
+            <div class="block_text">
+              <p class="block_tag">fashion</p>
+              <h4 class="block_header"><b>New arrivals</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 padding0 margin_top_15">
+        <div class="block_img_hover"> <img class="img-responsive block_img_small margin_bottom_30" src="images/banner/block - 2.jpg" />
+          <div class="overlay_block">
+            <div class="block_text_small">
+              <p class="block_tag">fashion</p>
+              <h4 class="block_header"><b>New arrivals</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="block_img_hover margin_top_15"> <img class="img-responsive block_img_small" src="images/banner/block - 3.jpg" />
+          <div class="overlay_block">
+            <div class="block_text_small">
+              <p class="block_tag">fashion</p>
+              <h4 class="block_header"><b>New arrivals</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 padding0 margin_top_15 padding-right0">
+        <div class="block_img_hover"> <img class="img-responsive block_img" src="images/banner/block - 4.jpg" />
+          <div class="overlay_block">
+            <div class="block_text_small">
+              <p class="block_tag">fashion</p>
+              <h4 class="block_header"><b>New arrivals</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Featured categories--> 
+  
+  <!--New Arrivals-->
+  <div class="container margin-top padding0 pad0 aniview" data-av-animation="slideInLeft">
+    <div class="col-md-12 col-sm-12 padding0 pad0">
+      <h4 class="upper_caption">fresh look</h4>
+      <h1 class="lower_caption">new arrivals</h1>
+      <br />
+      
+      <!--product 1-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/3.png)"></span> <img class="img-responsive img_back" src="images/products/1.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 1</h4>
+          <h4 class="color_777 text-center">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 2-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/4.png)"></span> <img class="img-responsive img_back" src="images/products/2.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 2</h4>
+          <h4 class="color_777 text-center">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 3-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/1.png)"></span> <img class="img-responsive img_back" src="images/products/3.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 3</h4>
+          <h4 class="color_777 text-center">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 4-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/2.png)"></span> <img class="img-responsive img_back" src="images/products/4.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 4</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End New Arrivals--> 
+  
+  <!--Exclusive collection-->
+  <div class="container margin-top padding0 pad0 aniview" data-av-animation="slideInRight">
+    <div class="col-md-12 col-sm-12 padding0 pad0">
+      <h4 class="upper_caption">love these</h4>
+      <h1 class="lower_caption">Exclusive collection</h1>
+      <br />
+      
+      <!--product 5-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/3.png)"></span> <img class="img-responsive img_back" src="images/products/5.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <h4 class="product_name_text">Product 5</h4>
+          <h4 class="color_777 text-center  padding0">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 6-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/10.png)"></span> <img class="img-responsive img_back" src="images/products/6.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 6</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 7-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/11.png)"></span> <img class="img-responsive img_back" src="images/products/7.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <h4 class="product_name_text">Product 7</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 8-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/10.png)"></span> <img class="img-responsive img_back" src="images/products/8.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 8</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 margin-top25 padding0 pad0"> 
+      
+      <!--product 9-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/4.png)"></span> <img class="img-responsive img_back" src="images/products/9.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <h4 class="product_name_text">Product 9</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 10-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/8.png)"></span> <img class="img-responsive img_back" src="images/products/10.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+          <h4 class="product_name_text">Product 10</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 11-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/7.png)"></span> <img class="img-responsive img_back" src="images/products/11.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <h4 class="product_name_text">Product 11</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+      
+      <!--product 12-->
+      
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="product_item_main">
+          <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/6.png)"></span> <img class="img-responsive img_back" src="images/products/12.png" /> </a>
+            <div class="shop_product_buttons_wrapper">
+              <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+            </div>
+            <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+          </div>
+          <h4 class="product_name_text">Product 1</h4>
+          <h4 class="color_777 text-center ">$60
+            <div class="product_text_div"><span class="product_price">$123</span></div>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Exclusive collection--> 
+  
+  <!--Newsletter-->
+  <div class="container margin-top aniview" data-av-animation="slideInLeft">
+    <div class="col-md-12 col-sm-12 newsletter">
+      <div class="col-md-6 col-sm-8 margin-top125">
+        <h3 class="news_caption_top text-center">Join Our Newsletter</h3>
+        <h4 class="text-center font_white">Hey you, subscribe it only takes a second to be the first to find out about our latest news and promotions…</h4>
+        <br />
+        <div class="input-group col-md-6 col-md-offset-3"> <span class="input-group-addon textbox_icon"><i class="fas fa-envelope"></i></span>
+          <input type="text" class="form-control textbox_email" placeholder="Enter your email address">
+        </div>
+        <br />
+        <center>
+          <a href="#" class="btn btn-subscribe hvr-shutter-out-horizontal">subscribe</a>
+        </center>
+      </div>
+    </div>
+  </div>
+  <!--End Newsletter--> 
+  
+  <!--blogs-->
+  <div class="container margin-top padding0 pad0 aniview" data-av-animation="fadeInDown">
+    <div class="col-md-12 col-sm-12 pad0 blog_border">
+      <h4 class="upper_caption">stay update</h4>
+      <h1 class="lower_caption">from our blog</h1>
+      <br />
+      <div class="col-md-4 col-sm-4">
+        <div class="blog_image"> <img class="img-responsive blog_img trans_500" src="images/banner/blog1.jpg" /></div>
+        <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+        <p class="blog_tag">fashion</p>
+        <a href="#" class="font_black">
+        <h3 class="text-center">Lorem Ipsum is simple</h3>
+        </a>
+        <p class="text-center blog_author">By John Deo</p>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="blog_image"> <img class="img-responsive blog_img trans_500" src="images/banner/blog2.jpg" /></div>
+        <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+        <p class="blog_tag">fashion</p>
+        <a href="#" class="font_black">
+        <h3 class="text-center">Lorem Ipsum is simple</h3>
+        </a>
+        <p class="text-center blog_author">By John Deo</p>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="blog_image"> <img class="img-responsive blog_img trans_500" src="images/banner/blog3.jpg" /></div>
+        <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+        <p class="blog_tag">fashion</p>
+        <a href="#" class="font_black">
+        <h3 class="text-center">Lorem Ipsum is simple</h3>
+        </a>
+        <p class="text-center blog_author">By John Deo</p>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+    </div>
+  </div>
+  <!--End blogs--> 
+  
+  <!--insta feed-->
+  <div class="container margin-top padding0 aniview" data-av-animation="slideInLeft">
+    <div class="col-md-12 col-sm-12 pad0">
+      <h4 class="upper_caption">fashion store</h4>
+      <h1 class="lower_caption">On instagram</h1>
+      <br />
+      <!-- LightWidget WIDGET --><script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e00315506df754f3816aa4d695120aeb.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      
+    </div>
+  </div>
+  <!--End insta feed--> 
+  
+  <!--Footer-->
+  <footer class="footer_background">
+    <div class="footer-top aniview" data-av-animation="slideInRight">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-logo"> <img src="images/Logo white.png" alt="">
+              <p class="footer_logo_description font_white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <br>
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+              <div class="widget-icon"> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> </div>
+              
+                  <div class="col-md-12 pad0 clear">
+                   <center> 
+                    <img class="img-responsive margin-top25" src="images/payment.png" />
+                   </center>
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--footer-top-area start-->
+    
+    <div class="footer-top-area aniview" data-av-animation="slideInLeft">
+      <div class="container border_top">
+        <div class="col-md-12 col-xs-12"> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>CONTACT US</h3>
+              <ul class="footer-contact">
+                <li> <i class="fas fa-map-marker"> </i> Addresss : ABC App.,Surat,395005 </li>
+                <li> <i class="fas fa-envelope"> </i> Email : info@fashionstore.com </li>
+                <li> <i class="fas fa-phone"> </i> Phone : +91 01234 56789 </li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>My account</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Register</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payment Options</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shop</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>My Wishlist</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cart</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>about us</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>About</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Contact</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Blog</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Privacy policy</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>Help</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payments</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Services</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shipping</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cancellation & Returns</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Report Infringement</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+        </div>
+      </div>
+    </div>
+    <!--footer-top-area end--> 
+    
+    <!--footer-bottom-area start-->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="copyright">
+              <p>Copyright © <a href="#" class="company_name">FashionStore</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-bottom-area end--> 
+    
+  </footer>
+</div>
+<!--End Footer--> 
+
+<!-- Color Variations -->
+
+<div class="color-scheme-select trans-05">
+  <div class="color-scheme-title text-colored mgt-25 mgb-15">
+    <h5> 05 Awesome Colors</h5>
+  </div>
+ 
+  <ul class="styleselector">
+              <li>
+                <a href="?color=red"><div class="style-red"><i class="active-red fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=black"><div class="style-black"><i class="active-black fa fa-check"></i></div></a>
+              </li>
+              <li>
+               <a href="?color=gold"><div class="style-gold"><i class="active-gold fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=blue"><div class="style-blue"><i class="active-blue fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=purple"><div class="style-purple"><i class="active-purple fa fa-check"></i></div></a>
+              </li>
+            </ul>
+   <!--         
+    <a href="http://52.202.130.20/Fashion_store/index.html?color=blue">
+        <div id="color-01" class="color-scheme-content theme-blue color-scheme-selected"> </div> 
+    </a>
+    <a href="http://52.202.130.20/Fashion_store/index.html?color=black"> 
+     <div id="color-02" class="color-scheme-content theme-black"> </div>
+    </a>
+     <a href="http://52.202.130.20/Fashion_store/index.html?color=purple"> 
+      <div id="color-03" class="color-scheme-content theme-purple"> </div>
+     </a>
+      <a href="http://52.202.130.20/Fashion_store/index.html?color=gold">  
+       <div id="color-04" class="color-scheme-content theme-golden"> </div>
+      </a>
+       <a href="http://52.202.130.20/Fashion_store/index.html?color=red"> 
+      <div id="color-05" class="color-scheme-content theme-red"> </div>
+      </a>-->
+  <div class="color-scheme-select-btn trans-05" > <span class="fa fa-cogs"></span> </div>
+</div>
+<!-- End Color Variations --> 
+
+<!-- Bootstrap core JavaScript --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+    $(".styleselector li").on("click", function() {
+      $(".styleselector li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+</script>
+<!--custom js--> 
+<script src="js/custom.js"></script> 
+<script src="js/jquery.aniview.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

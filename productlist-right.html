@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<title>Shop</title>
+
+<!--Bootstrap css-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!--Font-awesome css-->
+<!--<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<!--Custome css-->
+<!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!--Theme Color CSS-->
+<!--Theme Color CSS-->
+<script>
+if (window.location.search.indexOf('?color=red') === 0){
+	
+    document.write('<link rel="stylesheet" href="css/style_red.css" />');
+	
+}else if (window.location.search.indexOf('?color=black') === 0) {
+	 
+	document.write('<link rel="stylesheet" href="css/style_black.css" />');
+	
+}else if (window.location.search.indexOf('?color=purple') === 0) { 
+	document.write('<link rel="stylesheet" href="css/style_purple.css" />');
+		
+}else if (window.location.search.indexOf('?color=gold') === 0)  {
+	document.write('<link rel="stylesheet" href="css/style_gold.css" />');
+}else{
+	
+	document.write('<link rel="stylesheet" href="css/style.css" />');	
+		
+}
+	
+	
+	
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!--range slider css-->
+<link rel="stylesheet" type="text/css" href="css/asRange.css">
+<link rel="stylesheet" type="text/css" href="css/3dmenu.css">
+</head>
+
+<body class="set3d">
+<!-- Header -->
+<div id="menu" class="showmenu">
+  <ul class="cat_menu">
+    <li><a href="#">Category 1 <i class="fas fa-chevron-right ml-auto"></i></a></li>
+    <li><a href="#">Category 2<i class="fas fa-chevron-right"></i></a></li>
+    <li class="hassubs"> <a href="#">Category 3<i class="fas fa-chevron-right"></i></a>
+      <ul class="hidden-xs menu-width">
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+        </div>
+      </ul>
+      <!--mobile view-->
+      <ul class="visible-xs">
+        <li class="hassubs"> <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+          <ul>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+      <!--End mobile view--> 
+    </li>
+    <li><a href="#">Category 4<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 5<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 6<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 7<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 8<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 9<i class="fas fa-chevron-right"></i></a></li>
+  </ul>
+  <div id="trigger"></div>
+</div>
+<div id="content">
+  <header class="header"> 
+    
+    <!-- Top Bar -->
+    
+    <div class="top_bar">
+      <div class="container">
+        <div class="row">
+          <div class="row"> <a href="#" class="social_media"><i class="fab fa-facebook-f"></i></a> <a href="#" class="social_media"><i class="fab fa-twitter"></i></a> <a href="#" class="social_media">Call : +91 01234 56789</a>
+            <div class="top_bar_menu">
+              <ul class="standard_dropdown top_bar_dropdown">
+                <li class="display_inline"> <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                  </ul>
+                </li>
+                <li class="display_inline"> <a href="#">$ USD<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">EUR Euro</a></li>
+                    <li><a href="#">GBP British Pound</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Header Main -->
+    
+    <div class="header_main">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- Logo -->
+          <div class="col-md-3 col-sm-4">
+            <div class="logo_container">
+              <div class="logo hidden-xs"><a href="index.html"><img src="images/Logo.png" /></a></div>
+              <div class="logo visible-xs">
+                <center>
+                  <a href="index.html"><img src="images/Logo.png" /></a>
+                </center>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist for tablet view-->
+          <div class="col-sm-8 hidden-xs visible-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="#" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="#">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="#">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="#"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="#"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Search -->
+          <div class="col-md-6 col-sm-12">
+            <div class="header_search">
+              <div class="header_search_content">
+                <div class="header_search_form_container">
+                  <form action="#" class="header_search_form clearfix">
+                    <input type="search" class="header_search_input form-control" placeholder="Search for products...">
+                    <div class="custom_dropdown hidden-xs">
+                      <select class="categories_option">
+                        <option>Select Category</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                        <option>Category 3</option>
+                        <option>Category 4</option>
+                        <option>Category 5</option>
+                        <option>Category 6</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/icons/search.png" alt=""></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wishlist -->
+          <div class="col-md-3 col-sm-8 hidden-xs hidden-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="/Fashion_store/cart.html" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/cart.html">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="/Fashion_store/checkout.html">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="/Fashion_store/login.html"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/register.html"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    
+    <nav class="navbar navbar-default mrg15">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <div class="cat_menu_container showmenu">
+            <div class="cat_menu_title">
+              <div class="cat_menu_text hidden-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Browse Categories</div>
+              <div class="cat_menu_text visible-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Categories</div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav standard_dropdown main_nav_dropdown margin-left30">
+            <li><a href="index.html">HOME<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="/Fashion_store/about.html">ABOUT<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">SHOP<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="/Fashion_store/productlist.html">Shop Sidebar Left<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist-right.html">Shop Sidebar Right<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li><a href="/Fashion_store/blog.html">BLOG<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">CLOTHING<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li class="hassubs"> <a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                  </ul>
+                </li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+             <li><a href="/Fashion_store/contact.html">CONTACT<i class="fas fa-chevron-down"></i></a></li>
+            <!--<li><a href="#">FAQ<i class="fas fa-chevron-down"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!--End Header-->
+  
+  <div class="container margin-top">
+    <div class="row">
+      
+      <div class="col-md-9 col-sm-7  col-xs-12 padding0  aniview" data-av-animation="slideInLeft">
+        <div class="col-md-12 col-sm-12 col-xs-12 padding0 padding_bottom20">
+          <div class="col-md-6 col-sm-6 col-xs-12 padding0">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active">Shop</li>
+            </ol>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 text-right padding0"> 
+            <!--<h5><span>Sort by popularity <i class="fa fa-angle-down"></i></span> &nbsp;&nbsp; <span><i class="fa fa-list"></i></span> &nbsp;&nbsp; <span><i class="fa fa-th"></i></span></h5>-->
+            
+            <div class="col-md-6 col-md-offset-3 col-xs-12">
+              <select class="select_option">
+                <option>Sort by popularity</option>
+                <option>Sort by new arrival</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-xs-4 col-sm-12">
+              <h5><a href="/Fashion_store/productlist-th-sm-right.html" class="font_black"><i class="fa fa-th"></i></a> &nbsp;&nbsp; <a href="/Fashion_store/productlist-right.html" class="font_black"><i class="fa fa-th-large"></i></a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 margin-top25 padding0"> 
+          <!--product 1-->
+          
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/3.png)"></span> <img class="img-responsive img_back" src="images/products/1.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 1</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          
+          <!--product 2-->
+          
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/4.png)"></span> <img class="img-responsive img_back" src="images/products/2.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 2</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          
+          <!--product 3-->
+          
+          <div class="col-md-4 col-sm-6 col-xs-6 hidden-xs hidden-sm">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/1.png)"></span> <img class="img-responsive img_back" src="images/products/3.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 3</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!--end row-->
+        
+        <div class="col-md-12 col-xs-12 margin-top25 padding0">
+          <div class="col-md-4 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/2.png)"></span> <img class="img-responsive img_back" src="images/products/4.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 4</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+          
+          <!--product 5-->
+          
+          <div class="col-md-4 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/3.png)"></span> <img class="img-responsive img_back" src="images/products/5.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <h4 class="product_name_text">Product 5</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+          
+          <!--product 6-->
+          
+          <div class="col-md-4 col-xs-6 hidden-xs hidden-sm">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/10.png)"></span> <img class="img-responsive img_back" src="images/products/6.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 6</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+        </div>
+        <!--start row-->
+        <div class="col-md-12 col-xs-12 margin-top25 padding0"> 
+          
+          <!--product 7-->
+          
+          <div class="col-md-4 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/11.png)"></span> <img class="img-responsive img_back" src="images/products/7.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <h4 class="product_name_text">Product 7</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+          
+          <!--product 8-->
+          
+          <div class="col-md-4 col-xs-6">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/3.png)"></span> <img class="img-responsive img_back" src="images/products/5.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <h4 class="product_name_text">Product 8</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+          
+          <!--product 9-->
+          
+          <div class="col-md-4 col-xs-6 hidden-xs hidden-sm">
+            <div class="product_item_main">
+              <div class="product_item"> <a href="/Fashion_store/product-detail.html"> <span class="product_thumbnail_secondary" style="background-image:url(images/products/10.png)"></span> <img class="img-responsive img_back" src="images/products/8.png" /> </a>
+                <div class="shop_product_buttons_wrapper">
+                  <div class="shop_product_buttons"> <a href="#" class="button product_type_simple text-center">Add to cart</a> </div>
+                </div>
+                <div class="product_fav"> <img class="wishlist_icon" src="images/icons/wishlist.png" /> </div>
+              </div>
+              <div class="product_badges_wrapper"><span class="new_product_text">New!</span></div>
+              <h4 class="product_name_text">Product 8</h4>
+              <h4 class="color_777 text-center padding_bottom15">$60
+                <div class="product_text_div"><span class="product_price">$123</span></div>
+              </h4>
+            </div>
+          </div>
+          <!--end product--> 
+        </div>
+        <!--end row-->
+        
+        <div class="col-md-12 clear">
+          <center>
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1"><i class="fa fa-arrow-left"></i></a> </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"> <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a> </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a> </li>
+              </ul>
+            </nav>
+          </center>
+        </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-5 hidden-xs aniview" data-av-animation="slideInRight">
+        <div class="sidebar">
+          <div class="sidebar-cat">
+            <h4 class="cat-title">PRODUCT CATEGORIES</h4>
+            <ul class="cat-sidebar">
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Handbags &nbsp;<span><small>(25)</small></span></a></li>
+              <li><a href="#" class="current_cat"><i class="fas fa-check-circle"></i>&nbsp; Clothing &nbsp;<span><small>(05)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Watches &nbsp;<span><small>(42)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Footwear &nbsp;<span><small>(72)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Hats &nbsp;<span><small>(22)</small></span></a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY BRAND</h4>
+            <ul class="cat-sidebar">
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Adidas &nbsp;<span><small>(25)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Puma &nbsp;<span><small>(05)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Nike &nbsp;<span><small>(42)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Seven &nbsp;<span><small>(72)</small></span></a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY SIZE</h4>
+            <ul class="cat-sizebar sizefilter">
+              <li><a href="#">S</a></li>
+              <li><a href="#">M</a></li>
+              <li><a href="#">L</a></li>
+              <li><a href="#">XL</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY COLOR</h4>
+            <ul class="cat-sizebar colorfilter">
+              <li>
+                <div class="red"></div>
+              </li>
+              <li>
+                <div class="black"></div>
+              </li>
+              <li>
+                <div class="yellow"></div>
+              </li>
+              <li>
+                <div class="blue"></div>
+              </li>
+              <li>
+                <div class="green"></div>
+              </li>
+              <li>
+                <div class="pink"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">PRODUCT TAG</h4>
+            <ul class="cat-sizebar sizefilter">
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Women</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FITER BY PRICE</h4>
+            <div class="price_div">
+              <form method="post">
+                <input class="range-example-input-2" type="text" min="0" max="1000" value="200,600" name="points" step="1" />
+              </form>
+            </div>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">NEW ARRIVAL</h4>
+            <ul class="new-product new-arrival">
+              <li class="col-md-12 col-sm-12 pad0">
+                <div class="col-md-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-sm-12 pad0">
+                <div class="col-md-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-sm-12 pad0">
+                <div class="col-md-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+            </ul>
+            <ul class="new-product new-arrival">
+              <li class="col-md-12 col-sm-12 pad0"> <img src="images/banner/p-list-dummer.jpg" width="100%"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--for mobile screen-->
+      
+      <div class="col-xs-12 visible-xs">
+        <div class="sidebar">
+          <div class="sidebar-cat">
+            <h4 class="cat-title">PRODUCT CATEGORIES</h4>
+            <ul class="cat-sidebar">
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Handbags &nbsp;<span><small>(25)</small></span></a></li>
+              <li><a href="#" class="current_cat"><i class="fas fa-check-circle"></i>&nbsp; Clothing &nbsp;<span><small>(05)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Watches &nbsp;<span><small>(42)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Footwear &nbsp;<span><small>(72)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Hats &nbsp;<span><small>(22)</small></span></a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY BRAND</h4>
+            <ul class="cat-sidebar">
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Adidas &nbsp;<span><small>(25)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Puma &nbsp;<span><small>(05)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Nike &nbsp;<span><small>(42)</small></span></a></li>
+              <li><a href="#"><i class="far fa-circle"></i>&nbsp; Seven &nbsp;<span><small>(72)</small></span></a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY SIZE</h4>
+            <ul class="cat-sizebar sizefilter">
+              <li><a href="#">S</a></li>
+              <li><a href="#">M</a></li>
+              <li><a href="#">L</a></li>
+              <li><a href="#">XL</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FILTER BY COLOR</h4>
+            <ul class="cat-sizebar colorfilter">
+              <li>
+                <div class="red"></div>
+              </li>
+              <li>
+                <div class="black"></div>
+              </li>
+              <li>
+                <div class="yellow"></div>
+              </li>
+              <li>
+                <div class="blue"></div>
+              </li>
+              <li>
+                <div class="green"></div>
+              </li>
+              <li>
+                <div class="pink"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">PRODUCT TAG</h4>
+            <ul class="cat-sizebar sizefilter">
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Women</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">FITER BY PRICE</h4>
+            <div class="price_div">
+              <form method="post">
+                <input class="range-example-input-2" type="text" min="0" max="1000" value="200,600" name="points" step="1" />
+              </form>
+            </div>
+          </div>
+          <div class="sidebar-cat">
+            <h4 class="cat-title">NEW ARRIVAL</h4>
+            <ul class="new-product new-arrival">
+              <li class="col-md-12 col-xs-12 pad0">
+                <div class="col-md-4 col-xs-3 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-9">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-xs-12 pad0">
+                <div class="col-md-4 col-xs-3 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-9">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-xs-12 pad0">
+                <div class="col-md-4 col-xs-3 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-9">
+                  <h4> Product name</h4>
+                  <h5 class="color_777"> $150</h5>
+                </div>
+              </li>
+            </ul>
+            <ul class="new-product new-arrival">
+              <li class="col-md-12 pad0"> <img src="images/banner/p-list-dummer.jpg" width="100%"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--insta feed-->
+  <div class="container margin-top padding0 aniview" data-av-animation="slideInLeft">
+    <div class="col-md-12 col-sm-12 pad0">
+      <h4 class="upper_caption">fashion store</h4>
+      <h1 class="lower_caption">On instagram</h1>
+      <br />
+      <!-- LightWidget WIDGET --><script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e00315506df754f3816aa4d695120aeb.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      
+    </div>
+  </div>
+  <!--End insta feed--> 
+  
+  <!--Footer-->
+  <footer class="footer_background">
+    <div class="footer-top aniview" data-av-animation="slideInRight">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-logo"> <img src="images/Logo white.png" alt="">
+              <p class="footer_logo_description font_white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <br>
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+              <div class="widget-icon"> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> </div>
+              
+                  <div class="col-md-12 pad0 clear">
+                   <center> 
+                    <img class="img-responsive margin-top25" src="images/payment.png" />
+                   </center>
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--footer-top-area start-->
+    
+    <div class="footer-top-area aniview" data-av-animation="slideInLeft">
+      <div class="container border_top">
+        <div class="col-md-12 col-xs-12"> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>CONTACT US</h3>
+              <ul class="footer-contact">
+                <li> <i class="fas fa-map-marker"> </i> Addresss : ABC App.,Surat,395005 </li>
+                <li> <i class="fas fa-envelope"> </i> Email : info@fashionstore.com </li>
+                <li> <i class="fas fa-phone"> </i> Phone : +91 01234 56789 </li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>My account</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Register</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payment Options</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shop</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>My Wishlist</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cart</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>about us</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>About</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Contact</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Blog</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Privacy policy</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>Help</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payments</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Services</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shipping</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cancellation & Returns</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Report Infringement</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+        </div>
+      </div>
+    </div>
+    <!--footer-top-area end--> 
+    
+    <!--footer-bottom-area start-->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="copyright">
+              <p>Copyright © <a href="#" class="company_name">FashionStore</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-bottom-area end--> 
+    
+  </footer>
+  </div>
+  <!-- Color Variations -->
+  
+ <div class="color-scheme-select trans-05">
+  <div class="color-scheme-title text-colored mgt-25 mgb-15">
+    <h5> 05 Awesome Colors</h5>
+  </div>
+ 
+  <ul class="styleselector">
+              <li>
+                <a href="?color=red"><div class="style-red"><i class="active-red fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=black"><div class="style-black"><i class="active-black fa fa-check"></i></div></a>
+              </li>
+              <li>
+               <a href="?color=gold"><div class="style-gold"><i class="active-gold fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=blue"><div class="style-blue"><i class="active-blue fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=purple"><div class="style-purple"><i class="active-purple fa fa-check"></i></div></a>
+              </li>
+            </ul>
+  
+  <div class="color-scheme-select-btn trans-05" > <span class="fa fa-cogs"></span> </div>
+</div>
+<!-- End Color Variations --> 
+
+<!-- Bootstrap core JavaScript --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!--custom js--> 
+<script src="js/jquery-asRange.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="js/jquery.aniview.js"></script>
+</body>
+</html>

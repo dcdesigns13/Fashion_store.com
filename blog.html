@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<title>Blogs</title>
+
+<!--Bootstrap css-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!--Font-awesome css-->
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+
+<!--Custome css-->
+<!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!--Theme Color CSS-->
+<script>
+if (window.location.search.indexOf('?color=red') === 0){
+	
+    document.write('<link rel="stylesheet" href="css/style_red.css" />');
+	
+}else if (window.location.search.indexOf('?color=black') === 0) {
+	 
+	document.write('<link rel="stylesheet" href="css/style_black.css" />');
+	
+}else if (window.location.search.indexOf('?color=purple') === 0) { 
+	document.write('<link rel="stylesheet" href="css/style_purple.css" />');
+	
+}else if (window.location.search.indexOf('?color=gold') === 0){  
+	document.write('<link rel="stylesheet" href="css/style_gold.css" />');
+	
+}else if (window.location.search.indexOf('?color=gold') === 0)  {
+	document.write('<link rel="stylesheet" href="css/style_gold.css" />');
+}else{
+	
+	document.write('<link rel="stylesheet" href="css/style.css" />');	
+		
+}
+
+</script>
+<!--<link rel="stylesheet" type="text/css" href="css/style_black.css">
+<link rel="stylesheet" type="text/css" href="css/style_red.css">
+<link rel="stylesheet" type="text/css" href="css/style_purple.css">
+<link rel="stylesheet" type="text/css" href="css/style_gold.css">-->
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/3dmenu.css">
+
+
+
+</head>
+
+<body class="set3d">
+<!-- Header -->
+<div id="menu" class="showmenu">
+  <ul class="cat_menu">
+    <li><a href="#">Category 1 <i class="fas fa-chevron-right ml-auto"></i></a></li>
+    <li><a href="#">Category 2<i class="fas fa-chevron-right"></i></a></li>
+    <li class="hassubs"> <a href="#">Category 3<i class="fas fa-chevron-right"></i></a>
+      <ul class="hidden-xs menu-width">
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+          <div class="col-md-6">
+            <h4 class="menu-title">Menu Item</h4>
+            <a href="#" class="menu-text">ITEM 1</a> <a href="#" class="menu-text">ITEM 2</a> <a href="#" class="menu-text">ITEM 3</a> <a href="#" class="menu-text">ITEM 4</a> </div>
+        </div>
+      </ul>
+      <!--mobile view-->
+      <ul class="visible-xs">
+        <li class="hassubs"> <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+          <ul>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+      <!--End mobile view--> 
+    </li>
+    <li><a href="#">Category 4<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 5<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 6<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 7<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 8<i class="fas fa-chevron-right"></i></a></li>
+    <li><a href="#">Category 9<i class="fas fa-chevron-right"></i></a></li>
+  </ul>
+  <div id="trigger"></div>
+</div>
+<div id="content">
+  <header class="header"> 
+    
+    <!-- Top Bar -->
+    
+    <div class="top_bar">
+      <div class="container">
+        <div class="row">
+          <div class="row"> <a href="#" class="social_media"><i class="fab fa-facebook-f"></i></a> <a href="#" class="social_media"><i class="fab fa-twitter"></i></a> <a href="#" class="social_media">Call : +91 01234 56789</a>
+            <div class="top_bar_menu">
+              <ul class="standard_dropdown top_bar_dropdown">
+                <li class="display_inline"> <a href="#">English<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                  </ul>
+                </li>
+                <li class="display_inline"> <a href="#">$ USD<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">EUR Euro</a></li>
+                    <li><a href="#">GBP British Pound</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Header Main -->
+    
+    <div class="header_main">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- Logo -->
+          <div class="col-md-3 col-sm-4">
+            <div class="logo_container">
+              <div class="logo hidden-xs"><a href="index.html"><img src="images/Logo.png" /></a></div>
+              <div class="logo visible-xs">
+                <center>
+                  <a href="index.html"><img src="images/Logo.png" /></a>
+                </center>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist for tablet view-->
+          <div class="col-sm-8 hidden-xs visible-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="#" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="#">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="#">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="/Fashion_store/login.html"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/register.html"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Search -->
+          <div class="col-md-6 col-sm-12">
+            <div class="header_search">
+              <div class="header_search_content">
+                <div class="header_search_form_container">
+                  <form action="#" class="header_search_form clearfix">
+                    <input type="search" class="header_search_input form-control" placeholder="Search for products...">
+                    <div class="custom_dropdown hidden-xs">
+                      <select class="categories_option">
+                        <option>Select Category</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                        <option>Category 3</option>
+                        <option>Category 4</option>
+                        <option>Category 5</option>
+                        <option>Category 6</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/icons/search.png" alt=""></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wishlist -->
+          <div class="col-md-3 col-sm-8 hidden-xs hidden-sm pad0">
+            <div class="height90">
+              <div class="header_search_content pull-right">
+                <div class="my-cart"> <a href="/Fashion_store/cart.html" class="icon_style"> <img src="images/icons/cart.png"/>
+                  <div class="cart_count"><span>2</span></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li>
+                      <div class="cart-img"> <a href="#"><img alt="" src="images/products/1.jpg"></a> </div>
+                      <div class="cart-info">
+                        <h4><a href="#">Lorem Ipsum</a></h4>
+                        <span>$165.00 <span>x 1</span></span> </div>
+                      <div class="del-icon"> <a href="#"><i class="fa fa-times-circle"></i></a> </div>
+                    </li>
+                    <li class="cart-border">
+                      <div class="subtotal-text">Subtotal: </div>
+                      <div class="subtotal-price">$300.00</div>
+                    </li>
+                    <li class="cart_margin0"> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/cart.html">view cart</a> <a class="checkout hvr-shutter-out-horizontal" href="/Fashion_store/checkout.html">checkout</a> </li>
+                  </ul>
+                </div>
+                <div class="user-meta"> <a href="/Fashion_store/wishlist.html" class="icon_style"><img src="images/icons/wishlist black.png"/></a> </div>
+                <div class="header-search"> <a href="#" class="icon_style"><img src="images/icons/user.png"/></a>
+                  <ul>
+                    <li class="text-center"> <a class="cart-button hvr-shutter-out-horizontal margin_btm15" href="/Fashion_store/login.html"><i class="fas fa-sign-in-alt"></i> Login</a> <a class="cart-button hvr-shutter-out-horizontal" href="/Fashion_store/register.html"><i class="fas fa-user-plus"></i> Register</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    
+    <nav class="navbar navbar-default mrg15">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <div class="cat_menu_container showmenu">
+            <div class="cat_menu_title">
+              <div class="cat_menu_text hidden-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Browse Categories</div>
+              <div class="cat_menu_text visible-xs"><a href="#"><img src="images/icons/burger.png" /></a> &nbsp;&nbsp;&nbsp; Categories</div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav standard_dropdown main_nav_dropdown margin-left30">
+            <li><a href="index.html">HOME<i class="fas fa-chevron-down"></i></a></li> 
+            <li><a href="/Fashion_store/about.html">ABOUT<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">SHOP<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="/Fashion_store/productlist.html">Shop Sidebar Left<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist-right.html">Shop Sidebar Right<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="/Fashion_store/blog.html">BLOG<i class="fas fa-chevron-down"></i></a></li>
+            <li class="hassubs"> <a href="#">CLOTHING<i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li class="hassubs"> <a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                  </ul>
+                </li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="/Fashion_store/productlist.html">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+             <li><a href="/Fashion_store/contact.html">CONTACT<i class="fas fa-chevron-down"></i></a></li>
+            <!--<li><a href="#">FAQ<i class="fas fa-chevron-down"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!--End Header-->
+  
+  <div class="container margin-top">
+    <div class="row">
+      <div class="col-md-12 pad0">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li class="breadcrumb-item active">Blog</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9"> 
+        <!--Blog 1-->
+        <div class="col-md-12 col-sm-12 pad0">
+          <div class="blog_image"> <img class="img-responsive blog_img trans_500 blog_size" src="images/banner/blog_detail1.jpg" /> </div>
+          <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+          <p class="blog_tag">fashion</p>
+          <a href="#" class="font_black">
+          <h3 class="">Lorem Ipsum is simple</h3>
+          </a>
+          <p class="blog_author">By John Deo</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, est id mattis tempus, magna ligula facilisis lorem, nec dapibus turpis leo ac est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus elementum ex id justo molestie, rhoncus blandit metus interdum. Nullam laoreet nisi tellus, et luctus justo egestas ac. Proin vitae lacinia quam. Pellentesque sollicitudin interdum eros, a tempor mauris tristique at. Pellentesque ac ligula ante. Donec quis leo aliquet lacus fermentum dignissim.</p>
+          <a href="#" class="btn btn-black btn-blog hvr-shutter-out-horizontal">Read More <i class="fa fa-arrow-right"></i></a>
+          <div class="liner-continer"> <span class="left-line"></span>
+            <ul class="social-icons text-center icons-design-circle icons-size-small social-share ">
+              <li><a href="#" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-google-plus"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <span class="right-line"></span> </div>
+        </div>
+        
+        <!--Blog 2-->
+        
+        <div class="col-md-12 col-sm-12 pad0 margin-top">
+          <div class="blog_image"> <img class="img-responsive blog_img trans_500 blog_size" src="images/banner/blog_detail2.jpg" /> </div>
+          <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+          <p class="blog_tag">fashion</p>
+          <a href="#" class="font_black">
+          <h3 class="">Lorem Ipsum is simple</h3>
+          </a>
+          <p class="blog_author">By John Deo</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, est id mattis tempus, magna ligula facilisis lorem, nec dapibus turpis leo ac est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus elementum ex id justo molestie, rhoncus blandit metus interdum. Nullam laoreet nisi tellus, et luctus justo egestas ac. Proin vitae lacinia quam. Pellentesque sollicitudin interdum eros, a tempor mauris tristique at. Pellentesque ac ligula ante. Donec quis leo aliquet lacus fermentum dignissim.</p>
+          <a href="#" class="btn btn-black btn-blog hvr-shutter-out-horizontal">Read More <i class="fa fa-arrow-right"></i></a>
+          <div class="liner-continer"> <span class="left-line"></span>
+            <ul class="social-icons text-center icons-design-circle icons-size-small social-share ">
+              <li><a href="#" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-google-plus"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <span class="right-line"></span> </div>
+        </div>
+        
+        <!--Blog 3-->
+        
+        <div class="col-md-12 col-sm-12 pad0 margin-top">
+          <div class="blog_image"> <img class="img-responsive blog_img trans_500 blog_size" src="images/banner/blog_detail3.jpg" /> </div>
+          <div class="post-date"> <span class="post-date-day"> 08 </span> <span class="post-date-month"> Aug </span> </div>
+          <p class="blog_tag">fashion</p>
+          <a href="#" class="font_black">
+          <h3 class="">Lorem Ipsum is simple</h3>
+          </a>
+          <p class="blog_author">By John Deo</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, est id mattis tempus, magna ligula facilisis lorem, nec dapibus turpis leo ac est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus elementum ex id justo molestie, rhoncus blandit metus interdum. Nullam laoreet nisi tellus, et luctus justo egestas ac. Proin vitae lacinia quam. Pellentesque sollicitudin interdum eros, a tempor mauris tristique at. Pellentesque ac ligula ante. Donec quis leo aliquet lacus fermentum dignissim.</p>
+          <a href="#" class="btn btn-black btn-blog hvr-shutter-out-horizontal">Read More <i class="fa fa-arrow-right"></i></a>
+          <div class="liner-continer"> <span class="left-line"></span>
+            <ul class="social-icons text-center icons-design-circle icons-size-small social-share ">
+              <li><a href="#" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-google-plus"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class=""><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <span class="right-line"></span> </div>
+        </div>
+        <div class="col-md-12 clear margin-top">
+          <center>
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1"><i class="fa fa-arrow-left"></i></a> </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"> <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a> </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a> </li>
+              </ul>
+            </nav>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-5">
+        <div class="sidebar">
+          <div class="sidebar-cat clear"> <img src="images/banner/p-list-dummer.jpg" width="100%"> </div>
+          <div class="sidebar-cat clear">
+            <h4 class="cat-title">Recent Posts</h4>
+            <ul class="new-product new-arrival">
+              <li class="col-md-12 col-xs-12 col-sm-12 pad0">
+                <div class="col-md-4 col-xs-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-8 col-sm-8">
+                  <h4> Lorem Ipsum</h4>
+                  <h5 class="color_777"> july 4,2018</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-xs-12 col-sm-12 pad0">
+                <div class="col-md-4 col-xs-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-8 col-sm-8">
+                  <h4> Lorem Ipsum</h4>
+                  <h5 class="color_777"> july 4,2018</h5>
+                </div>
+              </li>
+              <li class="col-md-12 col-xs-12 col-sm-12 pad0">
+                <div class="col-md-4 col-xs-4 col-sm-4 pad0"> <img src="images/products/small-4.png" width="70"> </div>
+                <div class="col-md-8 col-xs-8 col-sm-8">
+                  <h4> Lorem Ipsum</h4>
+                  <h5 class="color_777"> july 4,2018</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-cat clear">
+            <h4 class="cat-title">PRODUCT TAG</h4>
+            <ul class="cat-sizebar sizefilter">
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Women</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+  <footer class="footer_background">
+    <div class="footer-top aniview" data-av-animation="slideInRight">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-logo"> <img src="images/Logo white.png" alt="">
+              <p class="footer_logo_description font_white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <br>
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+              <div class="widget-icon"> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> </div>
+              
+                  <div class="col-md-12 pad0 clear">
+                   <center> 
+                    <img class="img-responsive margin-top25" src="images/payment.png" />
+                   </center>
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--footer-top-area start-->
+    
+    <div class="footer-top-area aniview" data-av-animation="slideInLeft">
+      <div class="container border_top">
+        <div class="col-md-12 col-xs-12"> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>CONTACT US</h3>
+              <ul class="footer-contact">
+                <li> <i class="fas fa-map-marker"> </i> Addresss : ABC App.,Surat,395005 </li>
+                <li> <i class="fas fa-envelope"> </i> Email : info@fashionstore.com </li>
+                <li> <i class="fas fa-phone"> </i> Phone : +91 01234 56789 </li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>My account</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Register</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payment Options</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shop</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>My Wishlist</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cart</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>about us</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>About</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Contact</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Blog</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Privacy policy</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+          <!-- footer-widget start -->
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-widget">
+              <h3>Help</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Payments</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Services</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Shipping</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Cancellation & Returns</a></li>
+                <li><a href="#" class="text_hover"><i class="fas fa-angle-right"></i>Report Infringement</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- footer-widget end --> 
+        </div>
+      </div>
+    </div>
+    <!--footer-top-area end--> 
+    
+    <!--footer-bottom-area start-->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="copyright">
+              <p>Copyright © <a href="#" class="company_name">FashionStore</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-bottom-area end--> 
+    
+  </footer>
+<!--End Footer--> 
+
+<!-- Color Variations -->
+
+<div class="color-scheme-select trans-05">
+  <div class="color-scheme-title text-colored mgt-25 mgb-15">
+    <h5> 05 Awesome Colors</h5>
+  </div>
+ 
+  <ul class="styleselector">
+              <li>
+                <a href="?color=red"><div class="style-red"><i class="active-red fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=black"><div class="style-black"><i class="active-black fa fa-check"></i></div></a>
+              </li>
+              <li>
+               <a href="?color=gold"><div class="style-gold"><i class="active-gold fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=blue"><div class="style-blue"><i class="active-blue fa fa-check"></i></div></a>
+              </li>
+              <li>
+                <a href="?color=purple"><div class="style-purple"><i class="active-purple fa fa-check"></i></div></a>
+              </li>
+            </ul>
+   
+  <div class="color-scheme-select-btn trans-05" > <span class="fa fa-cogs"></span> </div>
+</div>
+<!-- End Color Variations --> 
+
+<!-- Bootstrap core JavaScript --> 
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!--custom js--> 
+<script src="js/custom.js"></script> 
+<script src="js/jquery.aniview.js"></script>
+</body>
+</html>
